@@ -25,6 +25,7 @@
         
     /* Colors */
     --body-background-color: #fff;
+    --nav-background-color: #000;
     --primary-text-color: #000;
     --secondary-text-color: #fff;
     --tertiary-text-color: #707070;
@@ -50,6 +51,15 @@
 body
 {
     font-family: 'Times New Roman', sans-serif;
+    overflow-x: hidden;
+}
+
+main
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 40px;
+    height: 100dvh;
 }
 
 header
@@ -108,4 +118,12 @@ button
     font-family: inherit;
     background-color: transparent;
     cursor: pointer;
+}
+
+img
+{
+    display: block;
+    height: auto;
+    width: 100%;
+    object-fit: contain;
 }
