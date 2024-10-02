@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bitbucket</title>
+    <meta id="bb-bootstrap" data-current-user="{&quot;isAuthenticated&quot;: false, &quot;isKbdShortcutsEnabled&quot;: true, &quot;isSshEnabled&quot;: false}"
+
+
+    data-target-workspace-uuid="7fd4b647-c91b-452f-b0b4-40bffcf951ba"
+ />
+    <meta name="frontbucket-version" content="32c216b5d88c36c768644138cb1aea59ad0bdfac">
+    <meta name="frontbucket-environment" content="production">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+
+
+<meta name="bb-env" content="production" />
+<meta id="bb-canon-url" name="bb-canon-url" content="https://bitbucket.org">
+<meta name="bb-api-canon-url" content="https://api.bitbucket.org">
+
+
+
+<meta name="bitbucket-commit-hash" content="23eceeafcad6">
+<meta name="bb-app-node" content="021eea260bdf">
+<meta name="bb-dce-env" content="micros">
+<meta name="bb-view-name" content="bitbucket.apps.repo2.views.SourceView">
+<meta name="ignore-whitespace" content="False">
+<meta name="tab-size" content="None">
+<meta name="locale" content="en">
+<meta name="application-name" content="Bitbucket">
+<meta name="apple-mobile-web-app-title" content="Bitbucket">
+<meta name="slack-app-id" content="A8W8QLZD1">
+<meta name="statuspage-api-host" content="https://bqlf8qjztdtr.statuspage.io">
+
+
+<meta name="theme-color" content="#0049B0">
+<meta name="msapplication-TileColor" content="#0052CC">
+<meta name="msapplication-TileImage" content="https://bbc-object-storage--frontbucket.us-east-1.prod.public.atl-paas.net/23eceeafcad6/img/logos/bitbucket/mstile-150x150.png">
+<link rel="apple-touch-icon" sizes="180x180" type="image/png" href="https://bbc-object-storage--frontbucket.us-east-1.prod.public.atl-paas.net/23eceeafcad6/img/logos/bitbucket/apple-touch-icon.png">
+<link rel="icon" sizes="192x192" type="image/png" href="https://bbc-object-storage--frontbucket.us-east-1.prod.public.atl-paas.net/23eceeafcad6/img/logos/bitbucket/android-chrome-192x192.png">
+
+<link rel="icon" sizes="16x16 24x24 32x32 64x64" type="image/x-icon" href="/favicon.ico?v=2">
+<link rel="mask-icon" href="https://bbc-object-storage--frontbucket.us-east-1.prod.public.atl-paas.net/23eceeafcad6/img/logos/bitbucket/safari-pinned-tab.svg" color="#0052CC">
+
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Bitbucket">
+
+    <meta name="description" content="">
+    <meta name="bb-single-page-app" content="true">
+    
+      <link rel="stylesheet" href="https://bbc-object-storage--frontbucket.us-east-1.prod.public.atl-paas.net/frontbucket/assets/present/32c216b5d88c36c768644138cb1aea59ad0bdfac/vendor.css">
+    
+    
+    
+    <script nonce="7aXk+rx3KJXrng5u1Qubdw==">
+
+if (window.performance) {
+
+  
+  window.performance.okayToSendMetrics = !document.hidden && 'onvisibilitychange' in document;
+
+  if (window.performance.okayToSendMetrics) {
+
+    
+    window.addEventListener('visibilitychange', function () {
+      if (document.hidden) {
+        window.performance.okayToSendMetrics = false;
+      }
+    });
+  }
+
+  
+  
+}
+</script>
+  </head>
+  <body>
+    <div id="root">
+    <script nonce="7aXk+rx3KJXrng5u1Qubdw==">
+      window.__webpack_public_path__ = "https://bbc-object-storage--frontbucket.us-east-1.prod.public.atl-paas.net/frontbucket/assets/present/32c216b5d88c36c768644138cb1aea59ad0bdfac/";
+    </script>
+    
+    
+    
+    </div>
+    <script nonce="7aXk+rx3KJXrng5u1Qubdw==">
+      
+        window.__sentry__ = {"dsn": "https://2dcda83904474d8c86928ebbfa1ab294@o55978.ingest.sentry.io/1480772", "environment": "production", "tags": {"dc_location": "Micros-3", "micros_deployment_id": "9egg3t5c0hh1kvi3", "micros_service": "bbc-website", "micros_envtype": "prod", "micros_service_version": "102328", "micros_instance_id": "i-0062225dbaa180b5e", "micros_zone": "us-east-1.prod.atl-paas.net", "revision": "23eceeafcad6"}};
+      
+      window.__app_data__ = {"navigationIsOpen": true, "tenantId": "7fd4b647-c91b-452f-b0b4-40bffcf951ba", "features": {"enable-react-ufo": true, "bbc-platform-notifications": true, "acjs-next": true, "compass-in-cross-product-search-non-admin": true, "disable-compass-bitbucket-repository-card": false}, "links": {"backButtonUrl": null, "overviewUrl": "/HTML24DK/workspace/overview/"}, "initialContext": {"workspace": {"type": "workspace", "uuid": "{7fd4b647-c91b-452f-b0b4-40bffcf951ba}", "name": "HTML24 ApS", "slug": "HTML24DK", "is_private": true, "is_privacy_enforced": null, "links": {"avatar": {"href": "https://bitbucket.org/workspaces/HTML24DK/avatar/?ts=1726732109"}, "html": {"href": "https://bitbucket.org/HTML24DK/"}, "self": {"href": "https://bitbucket.org/!api/2.0/workspaces/HTML24DK"}}, "created_on": "2018-11-29T21:04:11.423150+00:00", "forking_mode": "allow_forks"}, "repository": {"type": "repository", "full_name": "HTML24DK/brown_rabbit", "links": {"self": {"href": "https://bitbucket.org/!api/2.0/repositories/HTML24DK/brown_rabbit"}, "html": {"href": "https://bitbucket.org/HTML24DK/brown_rabbit"}, "avatar": {"href": "https://bytebucket.org/ravatar/%7B9605b56a-bf79-4c28-ad04-1575d457259c%7D?ts=html5"}}, "name": "brown_rabbit", "slug": "brown_rabbit", "is_private": false, "uuid": "{9605b56a-bf79-4c28-ad04-1575d457259c}"}, "project": {"type": "project", "key": "JOB", "uuid": "{dc41cb25-6622-4936-92d1-c3633d0a13d2}", "is_private": false, "name": "Jobtest", "description": null, "links": {"self": {"href": "https://bitbucket.org/!api/2.0/workspaces/HTML24DK/projects/JOB"}, "html": {"href": "https://bitbucket.org/HTML24DK/workspace/projects/JOB"}, "avatar": {"href": "https://bitbucket.org/account/user/HTML24DK/projects/JOB/avatar/32?ts=1459348135"}}, "created_on": "2016-03-30T14:28:55.450560+00:00", "updated_on": "2016-03-30T14:28:55.450609+00:00", "has_publicly_visible_repos": true}}, "site_message": {"id": 31795, "title": "Get up to 8x faster builds with Bitbucket Pipelines", "text": "We're excited to announce the launch of our new Bitbucket Pipelines runtime, offering up to 8x faster CI/CD builds", "appearance": "flag", "feature_slug": "", "ld_feature": "show-bitbucket-pipelines-8-x-step-popup", "url": "https://bitbucket.org/blog/announcing-our-new-ci-cd-runtime-with-up-to-8x-faster-builds"}, "frontbucket_version": "32c216b5d88c36c768644138cb1aea59ad0bdfac", "frontbucket_environment": "production"};
+      
+        window.__initial_state__ = {"global": {"geoip_country": null, "is_mobile_user_agent": false, "site_message": {"id": 31795, "title": "Get up to 8x faster builds with Bitbucket Pipelines", "text": "We're excited to announce the launch of our new Bitbucket Pipelines runtime, offering up to 8x faster CI/CD builds", "appearance": "flag", "feature_slug": "", "ld_feature": "show-bitbucket-pipelines-8-x-step-popup", "url": "https://bitbucket.org/blog/announcing-our-new-ci-cd-runtime-with-up-to-8x-faster-builds"}, "needs_marketing_consent": false, "marketing_consent_locale": null, "whats_new_feed": "https://bitbucket.org/blog/wp-json/wp/v2/posts?categories=196&context=embed&per_page=6&orderby=date&order=desc", "locale": "en", "path": "/HTML24DK/brown_rabbit/src/master/src/assets/icons/linkedin-white.svg", "isFocusedTask": false, "focusedTaskBackButtonUrl": null, "features": {"lookup-pr-approvers-from-prs": true, "log-asap-errors": true, "provisioning-install-pipelines-addon": true, "fd-prs-client-cache-fallback": true, "block-non-pipelines-custom-events-webhooks": true, "read-only-message-migrations": true, "provisioning-skip-workspace-creation": true, "hot-91446-add-tracing-x-b3": true, "uninstall-dvcs-addon-only-when-jira-is-removed": true, "auth-flow-adg3": true, "workspace-member-set-last-accessed": true, "use-elasticache-lsn-storage": true, "whitelisted_throttle_exemption": true, "bbc.core.pride-logo": false, "deployments-ui-in-frontbucket": true, "pipelines-settings-ui-in-frontbucket": true, "pipelines-deployments-settings-ui-in-frontbucket": true, "pipelines-runners-settings-ui-in-frontbucket": true, "pr-dependencies": false, "commit-expand-inno": false, "syntax-highlighting": false, "create-workspace-show-recaptcha": true, "spa-account-settings--settings-index": false, "lazy-diffstat": false, "core-ui-global-token-theme": false, "disable-reviewer-permissions-call": true, "enable-navigation-color-theme-picker": false, "bbc_new_nav": false, "extensible-merge-checks-enabled": false, "rebase-sync": true, "acjs-next": true, "compass-in-cross-product-search-non-admin": true, "disable-compass-bitbucket-repository-card": false, "workspace-ai-enabled": false, "fetch-annotations-with-session-auth": false, "pr-code-push-webhook": false, "enable-dynamic-pipelines": true, "unresolved-comments-check": false, "project-and-workspace-custom-merge-checks": false, "pr-review-groups": false, "bbc-platform-notifications": true, "pull-request-labels": false, "squash-fast-forward-merge-strategy": true, "rebase-no-fast-forward-merge-strategy": true, "rebase-fast-forward-merge-strategy": true, "prevent-forking-outside-workspace": true}, "isNavigationOpen": true, "flags": [], "horizontalNavigationItems": {"mainItems": [], "secondaryItems": [], "settingsItems": []}, "targetUser": {"display_name": "HTML24 ApS", "links": {"self": {"href": "https://bitbucket.org/!api/2.0/workspaces/%7B7fd4b647-c91b-452f-b0b4-40bffcf951ba%7D"}, "avatar": {"href": "https://bitbucket.org/account/HTML24DK/avatar/"}, "html": {"href": "https://bitbucket.org/%7B7fd4b647-c91b-452f-b0b4-40bffcf951ba%7D/"}}, "created_on": "2013-06-03T14:39:34.156980+00:00", "is_active": true, "type": "team", "uuid": "{7fd4b647-c91b-452f-b0b4-40bffcf951ba}", "has_2fa_enabled": null, "properties": {}, "username": "HTML24DK"}, "targetFeatures": {"lookup-pr-approvers-from-prs": true, "log-asap-errors": true, "provisioning-install-pipelines-addon": true, "fd-prs-client-cache-fallback": true, "block-non-pipelines-custom-events-webhooks": true, "view-source-filtering-upon-timeout": true, "read-only-message-migrations": true, "provisioning-skip-workspace-creation": true, "hot-91446-add-tracing-x-b3": true, "fd-repository-page-loading-error-guard": true, "uninstall-dvcs-addon-only-when-jira-is-removed": true, "auth-flow-adg3": true, "workspace-member-set-last-accessed": true, "use-elasticache-lsn-storage": true, "whitelisted_throttle_exemption": true, "atlassian-editor": true}}, "section": {"repository": {"bitbucketActions": [], "cloneProtocol": "https", "connectActions": [], "currentRepository": {"type": "repository", "full_name": "HTML24DK/brown_rabbit", "links": {"self": {"href": "https://bitbucket.org/!api/2.0/repositories/HTML24DK/brown_rabbit"}, "html": {"href": "https://bitbucket.org/HTML24DK/brown_rabbit"}, "avatar": {"href": "https://bytebucket.org/ravatar/%7B9605b56a-bf79-4c28-ad04-1575d457259c%7D?ts=html5"}, "clone": [{"name": "https", "href": "https://bitbucket.org/HTML24DK/brown_rabbit.git"}, {"name": "ssh", "href": "git@bitbucket.org:HTML24DK/brown_rabbit.git"}]}, "name": "brown_rabbit", "slug": "brown_rabbit", "description": "", "scm": "git", "website": null, "owner": {"display_name": "HTML24 ApS", "links": {"self": {"href": "https://bitbucket.org/!api/2.0/workspaces/%7B7fd4b647-c91b-452f-b0b4-40bffcf951ba%7D"}, "avatar": {"href": "https://bitbucket.org/account/HTML24DK/avatar/"}, "html": {"href": "https://bitbucket.org/%7B7fd4b647-c91b-452f-b0b4-40bffcf951ba%7D/"}}, "type": "team", "uuid": "{7fd4b647-c91b-452f-b0b4-40bffcf951ba}", "username": "HTML24DK"}, "workspace": {"type": "workspace", "uuid": "{7fd4b647-c91b-452f-b0b4-40bffcf951ba}", "name": "HTML24 ApS", "slug": "HTML24DK", "is_private": true, "is_privacy_enforced": null, "links": {"avatar": {"href": "https://bitbucket.org/workspaces/HTML24DK/avatar/?ts=1726732109"}, "html": {"href": "https://bitbucket.org/HTML24DK/"}, "self": {"href": "https://bitbucket.org/!api/2.0/workspaces/HTML24DK"}}, "created_on": "2018-11-29T21:04:11.423150+00:00", "forking_mode": "allow_forks"}, "is_private": false, "project": {"type": "project", "owner": {"display_name": "HTML24 ApS", "links": {"self": {"href": "https://bitbucket.org/!api/2.0/workspaces/%7B7fd4b647-c91b-452f-b0b4-40bffcf951ba%7D"}, "avatar": {"href": "https://bitbucket.org/account/HTML24DK/avatar/"}, "html": {"href": "https://bitbucket.org/%7B7fd4b647-c91b-452f-b0b4-40bffcf951ba%7D/"}}, "type": "team", "uuid": "{7fd4b647-c91b-452f-b0b4-40bffcf951ba}", "username": "HTML24DK"}, "workspace": {"type": "workspace", "uuid": "{7fd4b647-c91b-452f-b0b4-40bffcf951ba}", "name": "HTML24 ApS", "slug": "HTML24DK", "links": {"avatar": {"href": "https://bitbucket.org/workspaces/HTML24DK/avatar/?ts=1726732109"}, "html": {"href": "https://bitbucket.org/HTML24DK/"}, "self": {"href": "https://bitbucket.org/!api/2.0/workspaces/HTML24DK"}}}, "key": "JOB", "uuid": "{dc41cb25-6622-4936-92d1-c3633d0a13d2}", "is_private": false, "name": "Jobtest", "description": null, "links": {"self": {"href": "https://bitbucket.org/!api/2.0/workspaces/HTML24DK/projects/JOB"}, "html": {"href": "https://bitbucket.org/HTML24DK/workspace/projects/JOB"}, "avatar": {"href": "https://bitbucket.org/account/user/HTML24DK/projects/JOB/avatar/32?ts=1459348135"}}, "created_on": "2016-03-30T14:28:55.450560+00:00", "updated_on": "2016-03-30T14:28:55.450609+00:00", "has_publicly_visible_repos": true}, "fork_policy": "allow_forks", "updated_on": "2024-03-07T11:27:38.887280+00:00", "language": "html/css", "uuid": "{9605b56a-bf79-4c28-ad04-1575d457259c}", "mainbranch": {"name": "master"}, "landing_page": "source"}, "menuItems": [{"id": "repo-source-link", "label": "Source", "tab_name": "source", "anchor": true, "weight": 200, "is_premium": null, "is_beta": null, "is_new": null, "url": "/HTML24DK/brown_rabbit/src", "target": "_self", "icon_class": "icon-source", "badge_label": null, "matching_url_prefixes": ["/diff", "/history-node"], "analytics_label": "repository.source", "analytics_payload": {}, "is_client_link": true, "is_external_link": false, "is_dropdown_item": false, "test_id": null, "children": [], "type": "menu_item", "icon": "icon-source"}, {"id": "repo-commits-link", "label": "Commits", "tab_name": "commits", "anchor": true, "weight": 300, "is_premium": null, "is_beta": null, "is_new": null, "url": "/HTML24DK/brown_rabbit/commits/", "target": "_self", "icon_class": "icon-commits", "badge_label": null, "matching_url_prefixes": [], "analytics_label": "repository.commits", "analytics_payload": {}, "is_client_link": true, "is_external_link": false, "is_dropdown_item": false, "test_id": null, "children": [], "type": "menu_item", "icon": "icon-commits"}, {"id": "repo-branches-link", "label": "Branches", "tab_name": "branches", "anchor": true, "weight": 400, "is_premium": null, "is_beta": null, "is_new": null, "url": "/HTML24DK/brown_rabbit/branches/", "target": "_self", "icon_class": "icon-branches", "badge_label": null, "matching_url_prefixes": ["/branch"], "analytics_label": "repository.branches", "analytics_payload": {}, "is_client_link": true, "is_external_link": false, "is_dropdown_item": false, "test_id": null, "children": [], "type": "menu_item", "icon": "icon-branches"}, {"id": "repo-pullrequests-link", "label": "Pull requests", "tab_name": "pullrequests", "anchor": true, "weight": 500, "is_premium": null, "is_beta": null, "is_new": null, "url": "/HTML24DK/brown_rabbit/pull-requests/", "target": "_self", "icon_class": "icon-pull-requests", "badge_label": null, "matching_url_prefixes": [], "analytics_label": "repository.pullrequests", "analytics_payload": {}, "is_client_link": true, "is_external_link": false, "is_dropdown_item": false, "test_id": null, "children": [], "type": "menu_item", "icon": "icon-pull-requests"}, {"id": "repo-pipelines-link", "label": "Pipelines", "tab_name": "pipelines", "anchor": true, "weight": 550, "is_premium": null, "is_beta": null, "is_new": null, "url": "/HTML24DK/brown_rabbit/pipelines", "target": "_self", "icon_class": "icon-pipelines", "badge_label": null, "matching_url_prefixes": [], "analytics_label": "repository.pipelines", "analytics_payload": {}, "is_client_link": true, "is_external_link": false, "is_dropdown_item": false, "test_id": null, "children": [], "type": "menu_item", "icon": "icon-pipelines"}, {"id": "repo-deployments-link", "label": "Deployments", "tab_name": "deployments", "anchor": true, "weight": 570, "is_premium": null, "is_beta": null, "is_new": null, "url": "/HTML24DK/brown_rabbit/deployments", "target": "_self", "icon_class": "icon-deployments", "badge_label": null, "matching_url_prefixes": [], "analytics_label": "repository.deployments", "analytics_payload": {}, "is_client_link": true, "is_external_link": false, "is_dropdown_item": false, "test_id": null, "children": [], "type": "menu_item", "icon": "icon-deployments"}, {"id": "repo-jira-link", "label": "Jira issues", "tab_name": "jira", "anchor": true, "weight": 600, "is_premium": null, "is_beta": null, "is_new": null, "url": "/HTML24DK/brown_rabbit/jira", "target": "_self", "icon_class": "icon-jira", "badge_label": null, "matching_url_prefixes": [], "analytics_label": "repository.jira", "analytics_payload": {}, "is_client_link": true, "is_external_link": false, "is_dropdown_item": false, "test_id": null, "children": [], "type": "menu_item", "icon": "icon-jira"}, {"id": "repo-security-link", "label": "Security", "tab_name": "security", "anchor": true, "weight": 610, "is_premium": null, "is_beta": null, "is_new": null, "url": "/HTML24DK/brown_rabbit/security", "target": "_self", "icon_class": "icon-security", "badge_label": null, "matching_url_prefixes": [], "analytics_label": "repository.security", "analytics_payload": {}, "is_client_link": true, "is_external_link": false, "is_dropdown_item": false, "test_id": null, "children": [], "type": "menu_item", "icon": "icon-security"}, {"id": "repo-downloads-link", "label": "Downloads", "tab_name": "downloads", "anchor": true, "weight": 800, "is_premium": null, "is_beta": null, "is_new": null, "url": "/HTML24DK/brown_rabbit/downloads/", "target": "_self", "icon_class": "icon-downloads", "badge_label": null, "matching_url_prefixes": [], "analytics_label": "repository.downloads", "analytics_payload": {}, "is_client_link": false, "is_external_link": false, "is_dropdown_item": false, "test_id": null, "children": [], "type": "menu_item", "icon": "icon-downloads"}], "mirrors": [], "sizeLimits": {"hard": 4294967296, "soft": 2147483648.0, "readOnly": 10737418240.0}, "override_settings": {"default_merge_strategy": false, "branching_model": false}, "activeMenuItem": "source"}}, "repository": {"source": {"section": {"hash": "069af49d540530be8de4f76f1c0239f828333713", "ref": {"name": "master", "target": {"hash": "069af49d540530be8de4f76f1c0239f828333713", "links": {"self": {"href": "https://bitbucket.org/!api/2.0/repositories/HTML24DK/brown_rabbit/commit/069af49d540530be8de4f76f1c0239f828333713"}, "html": {"href": "https://bitbucket.org/HTML24DK/brown_rabbit/commits/069af49d540530be8de4f76f1c0239f828333713"}}, "type": "commit"}, "links": {"self": {"href": "https://bitbucket.org/!api/2.0/repositories/HTML24DK/brown_rabbit/refs/branches/master"}, "html": {"href": "https://bitbucket.org/HTML24DK/brown_rabbit/branch/master"}}}, "atRef": null}}}};
+      
+      window.__settings__ = {"ADMINHUB_BASE_URL": "https://admin.atlassian.com", "API_CANON_URL": "https://api.bitbucket.org", "CANON_URL": "https://bitbucket.org", "LOGIN_URL": "/account/signin/", "SOCIAL_AUTH_ATLASSIANID_LOGIN_PROMPT_URL": "https://id.atlassian.com/login", "SOCIAL_AUTH_ATLASSIANID_LOGOUT_URL": "https://id.atlassian.com/logout", "SOCIAL_AUTH_ATLASSIANID_PROFILE_URL": "https://id.atlassian.com/manage-profile/", "ATLASSIANID_LOGIN_URL": "https://id.atlassian.com/login", "ATLASSIANID_LOGOUT_URL": "https://id.atlassian.com/logout", "ATLASSIANID_MANAGE_PROFILE_URL": "https://id.atlassian.com/manage-profile/", "MARKETPLACE_TERMS_OF_USE_URL": null, "CONSENT_HUB_FRONTEND_BASE_URL": "https://preferences.atlassian.com", "EMOJI_STANDARD_BASE_URL": "https://bitbucket.org/gateway/api/emoji/", "STATUSPAGE_URL": "https://bitbucket.status.atlassian.com/", "RECAPTCHA_PUBLIC_KEY": "6LcRaMMkAAAAAFB-7L-4-1-mdLIrOMAP4H5asuWK", "WAC_CREATE_WORKSPACE_URL": "https://www.atlassian.com/try/cloud/signup?bundle=bitbucket"};
+      window.__webpack_nonce__ = '7aXk+rx3KJXrng5u1Qubdw==';
+      window.isInitialLoadApdex = true;
+      
+      
+    </script>
+    
+      <script nonce="7aXk+rx3KJXrng5u1Qubdw==" src="https://bbc-object-storage--frontbucket.us-east-1.prod.public.atl-paas.net/frontbucket/assets/present/32c216b5d88c36c768644138cb1aea59ad0bdfac/ajs.js"></script>
+    
+      <script nonce="7aXk+rx3KJXrng5u1Qubdw==" src="https://bbc-object-storage--frontbucket.us-east-1.prod.public.atl-paas.net/frontbucket/assets/present/32c216b5d88c36c768644138cb1aea59ad0bdfac/app.js"></script>
+    
+    
+  </body>
+</html>

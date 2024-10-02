@@ -1,0 +1,53 @@
+/* TEXT CLASSES */
+.primary-text
+{
+    color: var(--primary-text-color);
+}
+
+.secondary-text
+{
+    color: var(--secondary-text-color);
+}
+
+.tertiary-text
+{
+    color: var(--tertiary-text-color);
+}
+
+.quaternary-text
+{
+    color: var(--quaternary-text-color);
+}
+
+
+/* BUTTONS */
+
+/* Call To Action */
+.cta-btn,
+.cta-btn.prev-btn
+{
+    padding: 5px 10px;
+    min-width: 60px;
+    width: fit-content;
+    color: var(--cta-btn-color);
+    background-color: var(--cta-btn-background-color);
+    border: 1px solid var(--cta-btn-border-color);
+    transition: color .15s ease-in, background .15s ease-in;
+}
+
+.cta-btn,
+.prev-btn:hover
+{
+    color: var(--cta-btn-hover-color);
+    background-color: var(--cta-btn-hover-background-color);
+    transition: color .15s ease-in, background .15s ease-in;
+}
+
+
+/* Add-on Classes */
+.opened
+{
+    transform: rotate(45deg);
+    transform-origin: center;
+    transition: transform .2s ease-in;
+}
