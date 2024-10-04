@@ -1,19 +1,21 @@
+/* Navigation Menu */
 nav.main-nav
 {
     display: grid;
-    grid-template-columns: auto 1fr auto;
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 60px;
     padding: 30px 40px;
-    height: 150px;
+    height: 100px;
     width: 100%;
     background-color: var(--nav-background-color);
+    
 
     .logo
     {
-        min-width: 250px;
+        height: 100%;    
+        width: 250px;
     }
-
 
     .search-and-toggle-container
     {
@@ -71,15 +73,17 @@ nav.main-nav
     }
 }
 
+/* Modiule Menu Content Container */
 .container.mobile-menu-content-container
 {
-    position: relative;
+    position: absolute;
+    width: 100dvw;
     right: -100vw;
     height: 100dvh;
     background-color: var(--nav-background-color);
     opacity: 0;
     transition: right .2s ease-in, opacity .2s ease-in;
-
+    z-index: 10000;
 
     &.active
     {
@@ -158,11 +162,139 @@ nav.main-nav
             }
         }
 
-
-
         & ul li a img
         {
             height: 20px;
         }
     }
 }
+
+/* Section: Slider */
+.slider
+{
+    position: relative;
+    height: 400px;
+    width: 100vw;
+    z-index: 100;
+    margin-top: 0;
+
+    & .slide
+    {
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        height: 100%;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+
+        &.current
+        {
+            transform: translateX(0);
+            z-index: 10;
+        }
+
+        /* Previous slide moves out to the left */
+        &.previous
+        {
+            transform: translateX(-100%);
+        }
+
+        /* Next slide moves in from the right */
+        &.next
+        {
+            transform: translateX(100%);
+        }
+
+        
+        &:first-child
+        {
+             background: url('../assets/slider/coffee_beans.jpg') no-repeat
+            center top/cover;
+        }
+
+        &:nth-child(2)
+        {
+            background: url('../assets/slider/latte_art.jpg') no-repeat
+            center top/cover;
+        }
+        
+        &:nth-child(3)
+        {
+            background: url('../assets/slider/iced_coffee.jpg') no-repeat
+            center top/cover;
+        }
+    } 
+}
+  
+
+.container.container.slider-control-btns-container
+{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 0 20px;
+    z-index: 100;
+
+    & button img
+    {
+        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(240deg);
+    }
+}
+
+/* Section: Slider Text & Articles */
+.slider-text-and-articles-section 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    & .container.slide-desc-container 
+    {  
+        align-self: center;
+        position: relative;
+        min-width: 75dvw;
+        max-width: 75dvw;
+        height: 300px;
+        background-color: #000;
+        margin-top: -550px;
+        color: #fff;
+        z-index: 1000;
+
+        & article 
+        {
+            opacity: 0;
+            transition: opacity .3s ease-in;
+
+            &.current-slide-article 
+            {
+                opacity: 1;
+                transition: opacity .3s ease-in;
+            }
+        }
+
+        & p 
+        {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-weight: 300;
+            font-size: 30px;
+            width: 100%;
+            padding: 30px;
+        }
+    }
+
+    & .container.articles-container 
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-self: start;
+    }
+}
+
+
