@@ -30,6 +30,7 @@
     --secondary-text-color: #fff;
     --tertiary-text-color: #707070;
     --quaternary-text-color: #ddd;
+    --slide-desc-container-background-color: #000;
 
     /* Buttons */
     --cta-btn-color: #000;
@@ -58,7 +59,8 @@ main
 {
     display: grid;
     grid-template-columns: 1fr;
-    margin: 40px;
+    justify-content: center;
+    text-align: center;
     height: 100dvh;
 }
 
@@ -125,5 +127,4 @@ img
     display: block;
     height: auto;
     width: 100%;
-    object-fit: contain;
 }
