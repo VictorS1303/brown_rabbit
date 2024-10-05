@@ -297,7 +297,8 @@ nav.main-nav
         gap: 45px;
         align-items: center;
         text-align: center;
-        margin-top: 50px;
+        margin-block: 50px 40px;
+
 
         & article
         {
@@ -334,17 +335,55 @@ nav.main-nav
             }
         }
     }
+
+    & .container.shop-events-scoreboard-container
+    {
+        text-align: left;
+        padding-inline: calc(25dvw / 2);
+
+
+        & article
+        {
+            border-bottom: 2px solid #ccc;
+            padding: 40px 0;
+
+            & h1, h2, h3, h4, h5, h6
+            {
+                margin-bottom: 20px;
+                font-weight: 400;
+            }
+
+            & p
+            {
+                margin-bottom: 5px;
+            }
+
+            &.event
+            {
+                & h4
+                {
+                    margin-bottom: 10px;
+                }
+
+                & p
+                {
+                    line-height: 1.3;
+                }
+            }
+        }
+    }
+
 }
 
 /* Section: Pagination */
-section.pagination
+.pagination
 {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
     text-align: center;
-    padding: 0 calc(25dvw / 2) 0 calc(25dvw / 2);
+    padding-inline: calc(25dvw / 2);
     margin-top: 60px;
     width: 100%;
     height: 150px;
