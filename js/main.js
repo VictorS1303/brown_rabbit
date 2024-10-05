@@ -6,13 +6,17 @@ const slides = document.querySelectorAll('.slide')
 const prevSlideButton = document.querySelector('#prev_slide_btn')
 const nextSlideButton = document.querySelector('#next_slide_btn')
 const slideDescContainerArticles = document.querySelectorAll('.container.slide-desc-container article')
-console.log(slideDescContainerArticles)
+
+const prevArticlesBtn = document.querySelector('#prev_articles_btn')
+const nextArticlesBtn = document.querySelector('#next_articles_btn')
+const currentPageNumber = document.querySelector('#current_page_number')
+const paginationSection = document.querySelector('.pagination-section')
 
 // EVENTLISTENERS //
 mobileMenuToggleBtn.addEventListener('click', toggleMobileMenu)
 prevSlideButton.addEventListener('click', prevSlide)
 nextSlideButton.addEventListener('click', nextSlide)
-
+paginationSection.addEventListener('click', (e) => updatePageNumber(e))
 
 // Mobile Menu //
 
@@ -84,3 +88,28 @@ function prevSlide()
 
 }
 
+// Update Page Number
+function updatePageNumber(e)
+{
+    if(e.target.matches('#prev_articles_btn'))
+    {
+        if(currentPageNumber.textContent === '1')
+        {
+            return
+        }
+         
+        currentPageNumber.textContent--
+    }
+
+    if(e.target.matches('#next_articles_btn'))
+    {
+        if(currentPageNumber.textContent === '3')
+        {
+            return
+        }
+            
+        currentPageNumber.textContent++
+    }
+}
+
+// Browse Articles
