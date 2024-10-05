@@ -256,11 +256,10 @@ nav.main-nav
     {  
         align-self: center;
         position: relative;
-        min-width: 75dvw;
-        max-width: 75dvw;
+        width: 75dvw;
         height: 300px;
         background-color: #000;
-        margin-top: -550px;
+        margin-top: -120px;
         color: #fff;
         z-index: 1000;
 
@@ -291,9 +290,49 @@ nav.main-nav
 
     & .container.articles-container 
     {
+        
+        width: 75dvw;
         display: grid;
         grid-template-columns: 1fr;
-        align-self: start;
+        gap: 45px;
+        align-items: center;
+        text-align: center;
+        margin-top: 50px;
+
+        & article
+        {
+            padding-left: calc(25dvw / 2);
+            text-align: left;
+            color: var(--primary-text-color);
+
+            & img
+            {
+                height: 300px;
+                width: 75dvw;
+                object-fit: cover;
+            }
+
+            & header
+            {
+                margin-top: 20px;
+
+               
+                & h6
+                {
+                    margin-top: 10px;
+                }
+            }
+
+            & .date
+            {
+                color: var(--date-color);
+            }
+
+            & p
+            {
+                margin-top: 10px;
+            }
+        }
     }
 }
 

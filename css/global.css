@@ -13,7 +13,6 @@
 :root
 {
     /* Font Sizes */
-
     --heading-one-font-size: 40px;
     --heading-two-font-size: 35px;
     --heading-three-font-size: 30px;
@@ -21,7 +20,7 @@
     --heading-five-font-size: 25px;
     --heading-six-font-size: 18px;
     --paragraph-font-size: 18px;
-    
+    --cta-btn-font-size: 20px;
         
     /* Colors */
     --body-background-color: #fff;
@@ -31,6 +30,8 @@
     --tertiary-text-color: #707070;
     --quaternary-text-color: #ddd;
     --slide-desc-container-background-color: #000;
+    --date-color: #aaa;
+    --divider-border-color: #ccc;
 
     /* Buttons */
     --cta-btn-color: #000;
@@ -103,6 +104,7 @@ p
 {
     font-family: inherit;
     font-size: var(--paragraph-font-size);
+    
 }
 
 a
