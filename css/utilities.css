@@ -55,10 +55,20 @@
     transition: color .15s ease-in, background .15s ease-in;
 }
 
-.article-text
+.article-text,
+.modal-text
 {
     line-height: 1.6;
     font-size: calc(var(--paragraph-font-size) * 1.1);
+}
+
+
+/* Date */
+.date
+{
+    font-weight: lighter;
+    margin: 10px 0 20px 0;
+    color: var(--date-color);
 }
 
 

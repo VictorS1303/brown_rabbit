@@ -75,118 +75,147 @@
 
 <main>
     
-    <!-- Section: Slider -->
-    <section class="slider">
-        <article class="slide current"></article>
-        <article class="slide"></article>
-        <article class="slide"></article>
+        <!-- Section: Slider -->
+        <section class="slider">
+            <article class="slide current"></article>
+            <article class="slide"></article>
+            <article class="slide"></article>
 
-        <div class="container slider-control-btns-container">
-            <button class="btn prev-slide-btn" id="prev_slide_btn">
-                <img src="./assets/icons/arrow-left.svg">
+            <div class="container slider-control-btns-container">
+                <button class="btn prev-slide-btn" id="prev_slide_btn">
+                    <img src="./assets/icons/arrow-left.svg">
+                </button>
+
+                <button class="btn next-slide-btn" id="next_slide_btn">
+                    <img src="./assets/icons/arrow-right.svg">
+                </button>
+            </div>
+        </section>
+    
+
+        <!-- Section: Slider Text & Articles -->
+        <section class="section slider-text-and-articles-section" id="slider_text_and_articles_section">
+            <div class="container slide-desc-container">
+                <article class="current-slide-article">
+                    <p>
+                        <q>To create an environment in which knowledge about coffee and its sphere can be obtained.</q>
+                    </p>
+                </article>
+                <article>
+                    <p>
+                        <q>This is a great introduction to the coffee industry's best beans on the planet</q>
+                    </p>
+                </article>
+                <article>
+                    <p>
+                        <q>Coffee in, code out - this is the way of eternal life an empowerment of the soul</q>
+                    </p>
+                </article>
+            </div>
+
+            <div class="container articles-container">
+                <a href="#">
+                    <article>
+                        <img src="./assets/posts/post_thumbnail-1.png" alt="post_thumbnail_image">
+                        <header>
+                            <h3>Wonderful Copenhagen 2021</h3>
+                            <h6 class="date">Published 12/07/2021</h6>
+                        </header>
+                        <p class="article-text">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem expedita debitis et ipsum harum, nemo doloribus non sunt hic modi tempora libero optio natus magni animi dolorem pariatur alias molestias explicabo repellendus voluptatum iusto, quos voluptatibus obcaecati? Atque sed repellat quidem ut provident dolore quisquam...
+                        </p>
+                        <button class="cta-btn">Read More</button>
+                    </article>
+                </a>
+
+                <a href="#">
+                    <article>
+                        <img src="./assets/posts/post_thumbnail-2.png" alt="post_thumbnail_image">
+                        <header>
+                            <h3>Wonderful Copenhagen 2021</h3>
+                            <h6 class="date">Published 12/07/2021</h6>
+                        </header>
+                        <p class="article-text">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem expedita debitis et ipsum harum, nemo doloribus non sunt hic modi tempora libero optio natus magni animi dolorem pariatur alias molestias explicabo repellendus voluptatum iusto, quos voluptatibus obcaecati? Atque sed repellat quidem ut provident dolore quisquam...
+                        </p>
+                        <button class="cta-btn">Read More</button>
+                    </article>
+                </a>
+
+                <a href="#">
+                    <article>
+                        <img src="./assets/posts/post_thumbnail-3.png" alt="post_thumbnail_image">
+                        <header>
+                            <h3>Wonderful Copenhagen 2021</h3>
+                            <h6 class="date">Published 12/07/2021</h6>
+                        </header>
+                        <p class="article-text">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem expedita debitis et ipsum harum, nemo doloribus non sunt hic modi tempora libero optio natus magni animi dolorem pariatur alias molestias explicabo repellendus voluptatum iusto, quos voluptatibus obcaecati? Atque sed repellat quidem ut provident dolore quisquam...
+                        </p>
+                        <button class="cta-btn">Read More</button>
+                    </article>
+                </a>
+
+                <a href="#">
+                    <article>
+                        <img src="./assets/posts/post_thumbnail-4.png" alt="post_thumbnail_image">
+                        <header>
+                            <h3>Wonderful Copenhagen 2021</h3>
+                            <h6 class="date">Published 12/07/2021</h6>
+                        </header>
+                        <p class="article-text">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem expedita debitis et ipsum harum, nemo doloribus non sunt hic modi tempora libero optio natus magni animi dolorem pariatur alias molestias explicabo repellendus voluptatum iusto, quos voluptatibus obcaecati? Atque sed repellat quidem ut provident dolore quisquam...
+                        </p>
+                        <button class="cta-btn">Read More</button>
+                    </article>
+                </a>
+            </div>
+        </section>
+
+        <!-- Section: Pagination -->
+        <section class="pagination pagination-section" id="pagination_section">
+            <button class="cta-btn prev-articles-btn" id="prev_articles_btn">
+                Previous
             </button>
 
-            <button class="btn next-slide-btn" id="next_slide_btn">
-                <img src="./assets/icons/arrow-right.svg">
+            <p class="counter page-counter" id="page_counter">
+                Page
+                <span class="current-page-number" id="current_page_number">1</span> of <span class="total-pages-number" id="total_pages_number">3</span>
+            </p>
+
+            <button class="cta-btn next-articles-btn" id="next_articles_btn">
+                Next
             </button>
-        </div>
-    </section>
-   
+        </section>
 
-    <!-- Section: Slider Text & Articles -->
-     <section class="section slider-text-and-articles-section" id="slider_text_and_articles_section">
-        <div class="container slide-desc-container">
-            <article class="current-slide-article">
-                <p>
-                    <q>To create an environment in which knowledge about coffee and its sphere can be obtained.</q>
-                </p>
+        <!-- Section: Articles Modal -->
+        <!-- <section class="modal articles-modal" id="articles_modal">
+            <article class="modal active" id="modal">
+                <div class="modal-top">
+                    <img src="./assets/posts/post_thumbnail-4.png" alt="modal_header">
+                    <button class="btn close-articles-modal-btn" id="close_articles_modal_btn">
+                        <img src="./assets/icons/close.svg" class="btn close-articles-modal-btn" id="close_articles_modal_btn" alt="close_modal_btn">
+                    </button>
+                </div>
+
+                <div class="modal-bottom">
+                    <header>
+                        <h2>
+                            Wonderful Copenhagen <br /> 2021
+                        </h2>
+                        <h6 class="date">Published 12/07/2021</h6>
+                    </header>
+
+                    <p class="modal-text">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam temporibus laboriosam at molestias molestiae aliquid, suscipit iure a vel error perspiciatis possimus nihil qui, praesentium libero perferendis architecto sed alias earum? At aut rem illum quae, officia, labore temporibus est voluptatum molestias nemo praesentium mollitia sunt laudantium sed adipisci eos.
+                    </p>
+
+                    <p class="modal-text">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam temporibus laboriosam at molestias molestiae aliquid, suscipit iure a vel error perspiciatis possimus nihil qui, praesentium libero perferendis architecto sed alias earum? At aut rem illum quae, officia, labore temporibus est voluptatum molestias nemo praesentium mollitia sunt laudantium sed adipisci eos.
+                    </p>
+                </div>
             </article>
-            <article>
-                <p>
-                    <q>This is a great introduction to the coffee industry's best beans on the planet</q>
-                </p>
-            </article>
-            <article>
-                <p>
-                    <q>Coffee in, code out - this is the way of eternal life an empowerment of the soul</q>
-                </p>
-            </article>
-        </div>
-
-        <div class="container articles-container">
-            <a href="#">
-                <article>
-                    <img src="./assets/posts/post_thumbnail-1.png" alt="post_thumbnail_image">
-                    <header>
-                        <h3>Wonderful Copenhagen 2021</h3>
-                        <h6 class="date">Published 12/07/2021</h6>
-                    </header>
-                    <p class="article-text">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem expedita debitis et ipsum harum, nemo doloribus non sunt hic modi tempora libero optio natus magni animi dolorem pariatur alias molestias explicabo repellendus voluptatum iusto, quos voluptatibus obcaecati? Atque sed repellat quidem ut provident dolore quisquam...
-                    </p>
-                    <button class="cta-btn">Read More</button>
-                </article>
-            </a>
-
-            <a href="#">
-                <article>
-                    <img src="./assets/posts/post_thumbnail-2.png" alt="post_thumbnail_image">
-                    <header>
-                        <h3>Wonderful Copenhagen 2021</h3>
-                        <h6 class="date">Published 12/07/2021</h6>
-                    </header>
-                    <p class="article-text">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem expedita debitis et ipsum harum, nemo doloribus non sunt hic modi tempora libero optio natus magni animi dolorem pariatur alias molestias explicabo repellendus voluptatum iusto, quos voluptatibus obcaecati? Atque sed repellat quidem ut provident dolore quisquam...
-                    </p>
-                    <button class="cta-btn">Read More</button>
-                </article>
-            </a>
-
-            <a href="#">
-                <article>
-                    <img src="./assets/posts/post_thumbnail-3.png" alt="post_thumbnail_image">
-                    <header>
-                        <h3>Wonderful Copenhagen 2021</h3>
-                        <h6 class="date">Published 12/07/2021</h6>
-                    </header>
-                    <p class="article-text">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem expedita debitis et ipsum harum, nemo doloribus non sunt hic modi tempora libero optio natus magni animi dolorem pariatur alias molestias explicabo repellendus voluptatum iusto, quos voluptatibus obcaecati? Atque sed repellat quidem ut provident dolore quisquam...
-                    </p>
-                    <button class="cta-btn">Read More</button>
-                </article>
-            </a>
-
-            <a href="#">
-                <article>
-                    <img src="./assets/posts/post_thumbnail-4.png" alt="post_thumbnail_image">
-                    <header>
-                        <h3>Wonderful Copenhagen 2021</h3>
-                        <h6 class="date">Published 12/07/2021</h6>
-                    </header>
-                    <p class="article-text">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem expedita debitis et ipsum harum, nemo doloribus non sunt hic modi tempora libero optio natus magni animi dolorem pariatur alias molestias explicabo repellendus voluptatum iusto, quos voluptatibus obcaecati? Atque sed repellat quidem ut provident dolore quisquam...
-                    </p>
-                    <button class="cta-btn">Read More</button>
-                </article>
-            </a>
-        </div>
-    </section>
-
-
-    <section class="pagination pagination-section" id="pagination_section">
-        <button class="cta-btn prev-articles-btn" id="prev_articles_btn">
-            Previous
-        </button>
-
-        <p class="counter page-counter" id="page_counter">
-            Page
-            <span class="current-page-number" id="current_page_number">1</span> of <span class="total-pages-number" id="total_pages_number">3</span>
-        </p>
-
-        <button class="cta-btn next-articles-btn" id="next_articles_btn">
-            Next
-        </button>
-    </section>
+        </section> -->
    </main>
 </body>
 </html>
