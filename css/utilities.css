@@ -36,6 +36,8 @@
     }
 }
 
+/* Socials Container */
+
 /* Call To Action */
 .cta-btn.prev-btn,
 .cta-btn.next-btn
@@ -55,11 +57,6 @@
     transition: color .15s ease-in, background .15s ease-in;
 }
 
-.article-text
-{
-    line-height: 1.6;
-    font-size: calc(var(--paragraph-font-size) * 1.1);
-}
 
 
 /* Add-on Classes */

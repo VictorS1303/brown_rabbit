@@ -407,3 +407,75 @@ section.sponsors-section
         gap: 30px;
     }
 }
+
+/* Footer */
+footer.footer
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--secondary-text-color);
+    background-color: var(--footer-background-color);
+    padding: 30px;
+    height: fit-content;
+    margin-top: 80px;
+
+    & > div:not(:first-of-type)
+    {
+        margin-block: 40px;
+    }
+
+    & .footer-logo
+    {
+        margin: 0 auto;
+        padding: 20px 15px;
+    }
+
+    & h3
+    {
+        color: var(--tertiary-text-color);
+        white-space: nowrap;
+    }
+
+
+    .container.socials-container
+    {
+        border-bottom: 2px solid var(--tertiary-text-color);
+
+        & ul
+        {
+            display: flex;
+            justify-content: center;
+            margin-block: 50px;
+            gap: 30px;
+        }
+
+        & ul li a img
+        {
+            height: 20px;
+        }
+    }
+
+    .container.instagram-posts-container
+    {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .container.footer-contact-container
+    {
+        
+        & .container.address-container
+        {
+            color: var(--tertiary-text-color);
+        }
+
+        a
+        {
+            color: inherit;
+        }
+    }
+}
