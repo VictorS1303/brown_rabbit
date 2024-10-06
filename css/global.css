@@ -29,10 +29,15 @@
     --secondary-text-color: #fff;
     --tertiary-text-color: #707070;
     --quaternary-text-color: #ddd;
+    --primary-background-color: #000;
+    --secondary-background-color: #fff;
+    --tertiary-background-color: #707070;
+    --quaternary-background-color: #ddd;
     --slide-desc-container-background-color: #000;
     --date-color: #aaa;
     --divider-border-color: #ccc;
     --footer-background-color: #000;
+    --border-bottom-color: #ccc;
 
     /* Buttons */
     --cta-btn-color: #000;
@@ -115,7 +120,6 @@ p
 {
     font-family: inherit;
     font-size: var(--paragraph-font-size);
-    
 }
 
 a

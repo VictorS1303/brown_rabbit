@@ -1,62 +1,24 @@
-/* TEXT CLASSES */
-.primary-text
-{
-    color: var(--primary-text-color);
-}
-
-.secondary-text
-{
-    color: var(--secondary-text-color);
-}
-
-.tertiary-text
-{
-    color: var(--tertiary-text-color);
-}
-
-.quaternary-text
-{
-    color: var(--quaternary-text-color);
-}
 
 
-/* BUTTONS */
-.cta-btn
-{
-    border: 1px solid var(--cta-btn-border-color);
-    padding: 10px 15px;
-    font-size: var(--cta-btn-font-size);
-    margin-top: 15px;
-    transition: color .15s ease-in, background .15s ease-in;
 
-    &:hover
-    {
-        color: var(--cta-btn-hover-color);
-        background-color: var(--cta-btn-hover-background-color);
-    }
-}
 
 /* Socials Container */
-
-/* Call To Action */
-.cta-btn.prev-btn,
-.cta-btn.next-btn
+.container.socials-container
 {
-    padding: 10px 15px;
-    min-width: 60px;
-    width: fit-content;
-    border: 2px solid var(--cta-btn-border-color);
-    border: 1px solid var(--cta-btn-border-color);
-    transition: color .15s ease-in, background .15s ease-in;
-}
+    position: relative;
+	
+    & ul
+    {
+   	    display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
 
-.prev-btn:hover
-{
-    color: var(--cta-btn-hover-color);
-    background-color: var(--cta-btn-hover-background-color);
-    transition: color .15s ease-in, background .15s ease-in;
+    & ul li a img
+    {
+        height: 20px;
+    }
 }
-
 
 
 /* Add-on Classes */
