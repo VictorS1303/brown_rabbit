@@ -1,6 +1,9 @@
 const mobileMenuToggleBtn = document.querySelector('#menu_toggle_btn')
 const mobileMenuContentContainer = document.querySelector('.mobile-menu-content-container')
 const mobileMenuSocialsContainer = document.querySelector('.socials-container')
+const searchResultsToggleBtn = document.querySelector('#search_results_toggle_button') 
+const searchResultsContainer = document.querySelector('.search-results-container')
+
 
 const slides = document.querySelectorAll('.slide')
 const prevSlideButton = document.querySelector('#prev_slide_btn')
@@ -17,6 +20,9 @@ mobileMenuToggleBtn.addEventListener('click', toggleMobileMenu)
 prevSlideButton.addEventListener('click', prevSlide)
 nextSlideButton.addEventListener('click', nextSlide)
 paginationSection.addEventListener('click', (e) => updatePageNumber(e))
+searchResultsToggleBtn.addEventListener('click', toggleSearchResultsContainer)
+
+
 
 // Mobile Menu //
 
@@ -28,8 +34,22 @@ function toggleMobileMenu()
     mobileMenuSocialsContainer.classList.toggle('active')
 }
 
+function toggleSearchResultsContainer()
+{
+    searchResultsToggleBtn.classList.toggle('opened')
+    searchResultsContainer.classList.toggle('active')
 
+    // Check if opened
+    checkIsOpen()
+}
 
+function checkIsOpen()
+{
+    if(searchResultsContainer.classList.contains('.active'))
+    {
+        document.body.style.overflowY = 'hidden'
+    }
+}
 
 
 // Slider //

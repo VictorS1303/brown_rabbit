@@ -22,9 +22,12 @@ nav.main-nav
         {
             .search-icon
             {
+                position: sticky;
                 height: 25px;
                 width: 25px;
                 cursor: pointer;
+                z-index: 100000;
+                transition: transform .2s ease-in;
             }
         }
 
@@ -60,7 +63,7 @@ nav.main-nav
     }
 }
 
-/* Modiule Menu Content Container */
+/* Mobile Menu Content Container */
 .container.mobile-menu-content-container
 {
     position: absolute;
@@ -150,6 +153,85 @@ nav.main-nav
         & ul li a img
         {
             height: 20px;
+        }
+    }
+}
+
+/* Search Results Container */
+.container.search-results-container
+{
+    position: absolute;
+    width: 100dvw;
+    right: -100dvw;
+    height: 100dvh;
+    background-color: var(--nav-background-color);
+    padding-block: 120px 60px;
+    padding-inline: 50px;
+    opacity: 0;
+    transition: right .2s ease-in, opacity .2s ease-in;
+    z-index: 10000;
+
+    &.active
+    {
+        right: 0;
+        opacity: 1;
+        transition: right .2s ease-in, opacity .2s ease-in;
+    }
+
+    .container
+    {
+        height: fit-content;
+
+        &.search-input-container
+        {
+            position: relative;
+            width: 100%;
+            margin-block: 50px;
+
+            img
+            {
+                position: absolute;
+                left: 10px;
+                width: 20px;
+                height: 20px;
+            }
+    
+            input.search-input
+            {
+                font-family: inherit;
+                width: 100%;
+                color: var(--secondary-text-color);
+                background-color: transparent;
+                border-bottom: 1px solid var(--secondary-text-color);
+                text-indent: 50px;
+                height: 40px;
+                font-size: 16px;
+    
+                &::placeholder
+                {
+                    color: #999;
+                }
+            }
+        }
+    }
+    
+    
+    & .container.search-articles-container article
+    {
+        
+        width: 100%;
+        border-bottom: 2px solid #2d2d2d;
+        padding-block: 10px;
+
+
+        & h6
+        {
+            margin-block: 10px;                
+        }
+
+        & p
+        {
+            line-height: 1.7;
         }
     }
 }
