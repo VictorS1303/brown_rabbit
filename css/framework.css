@@ -1,8 +1,3 @@
-:root
-{
-    --grid-template-number: 1;
-}
-
 /* TEXT CLASSES */
 .primary-text
 {
@@ -96,12 +91,40 @@
 }
 
 /* DISPLAYS */
+.d-inline
+{
+    display: inline;
+}
 
-/* Grid */
-.grid
+.d-block
+{
+    display: block;
+}
+
+.d-inline_block
+{
+    display: inline-block;
+}
+
+.d-contents
+{
+    display: contents;
+}
+
+.d-grid
 {
     display: grid;
 }
+
+.d-flex
+{
+    display: flex;
+}
+
+
+
+
+
 
 /* Grid -> Grid Template Columns */
 .gtc-one
@@ -205,11 +228,6 @@
     grid-template-rows: 10fr;
 }
 
-/* FLEX */
-.flex
-{
-    display: flex;
-}
 
 /* DIRECTIONS */
 .flex-d-row
@@ -220,4 +238,230 @@
 .flex-d-column
 {
     flex-direction: column;
+}
+
+
+/* ALIGNMENTS */
+
+/* Alignments -> Container */
+.ac-stretch
+{
+    align-content: stretch;
+}
+
+.ac-center
+{
+    align-content: center;
+}
+
+.ac-start
+{
+    align-content: start;
+}
+
+.ac-end
+{
+    align-content: end;
+}
+
+.ac-space_between
+{
+    align-content: space-between;
+}
+
+.ac-space_around
+{
+    align-content: space-around;
+}
+
+.ac-space_evenly
+{
+    align-content: space-evenly;
+}
+
+.ac-initial
+{
+    align-content: initial;
+}
+
+.ac-inherit
+{
+    align-content: inherit;
+}
+
+/* Alignment -> Children */
+.as-auto
+{
+    align-self: auto;
+}
+
+.as-stretch
+{
+    align-self: stretch;
+}
+
+.as-center
+{
+    align-self: center;
+}
+
+.as-start
+{
+    align-self: start;
+}
+
+.as-end
+{
+    align-self: end;
+}
+
+.as-baseline
+{
+    align-self: baseline;
+}
+
+.as-initial
+{
+    align-self: initial;
+}
+
+.as-inherit
+{
+    align-self: inherit;
+}
+
+
+/* Justify -> Container */
+.jc-start
+{
+    justify-content: start;
+}
+
+.jc-end
+{
+    justify-content: end;
+}
+
+.jc-center
+{
+    justify-content: center;
+}
+
+.jc-space_between
+{
+    justify-content: space-between;
+}
+
+.jc-space_around
+{
+    justify-content: space-around;
+}
+
+.jc-space_evenly
+{
+    justify-content: space-evenly;
+}
+
+.jc-initial
+{
+    justify-content: initial;
+}
+
+.jc-inherit
+{
+    justify-content: inherit;
+}
+
+/* Justify -> Children */
+.jc-start
+{
+    justify-content: start;
+}
+
+.jc-center
+{
+    justify-content: center;
+}
+
+.jc-end
+{
+    justify-content: end;
+}
+
+/* Aligment -> Items */
+.ai-start
+{
+    align-items: start;
+}
+
+.ai-center
+{
+    align-items: center;
+}
+
+.ai-end
+{
+    align-items: end;
+}
+
+/* DIRECTIONS */
+.fd-row
+{
+    flex-direction: row;
+}
+
+.fd-row_reverse
+{
+    flex-direction: row-reverse;
+}
+
+.fd-column
+{
+    flex-direction: column;
+}
+
+.fd-column_reverse
+{
+    flex-direction: column-reverse;
+}
+
+.fd-initial
+{
+    flex-direction: initial;
+}
+
+.fd-inherit
+{
+    flex-direction: inherit;
+}
+
+/* TEXT ALIGNMENT */
+.ta-left
+{
+    text-align: left;
+}
+
+.ta-center
+{
+    text-align: center;
+}
+
+.ta-right
+{
+    text-align: right;
+}
+
+.ta-justify
+{
+    text-align: justify;
+}
+
+.ta-initial
+{
+    text-align: initial;
+}
+
+.ta-inherit
+{
+    text-align: inherit;
 }
