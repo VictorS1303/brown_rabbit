@@ -6,45 +6,44 @@
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/utilities.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/framework.css">
     <script src="https://kit.fontawesome.com/e05f21b32e.js" crossorigin="anonymous"></script>
     <script src="js/main.js" type="module"></script>
     <title>TwentyFour | Brown Rabbit</title>
 </head>
 <body>
-    <nav class="main-nav d-grid gtc-two ai-center" id="main_nav">
+    <nav class="main-nav" id="main_nav">
         <img src="./assets/logos/logo-white.svg" class="logo" alt="logo_white">
 
-        <div class="container search-and-toggle-container d-flex jc-end ai-center">
+        <div class="container search-and-toggle-container">
             <div>
-                <img src="./assets/icons/search.svg" class="search-icon" id="search_results_toggle_button" alt="search_icon">
+                <img src="./assets/icons/search.svg" class="search-icon" alt="search_icon">
             </div>
 
             <button class="btn menu-toggle-btn" id="menu_toggle_btn">
-                <span class="menu-toggle-btn-line secondary-background"></span>
-                <span class="menu-toggle-btn-line secondary-background"></span>
+                <span class="menu-toggle-btn-line"></span>
+                <span class="menu-toggle-btn-line"></span>
             </button>
         </div>
     </nav>
     <div class="container mobile-menu-content-container">
         <ul>
             <li>
-                <a href="#" class="secondary-text">About us</a>
+                <a href="#">About us</a>
             </li>
             <li>
-                <a href="#" class="secondary-text">Events</a>
+                <a href="#">Events</a>
             </li>
             <li>
-                <a href="#" class="secondary-text">Nordic roaster</a>
+                <a href="#">Nordic roaster</a>
             </li>
             <li>
-                <a href="#" class="secondary-text">Results</a>
+                <a href="#">Results</a>
             </li>
             <li>
-                <a href="#" class="secondary-text">Links</a>
+                <a href="#">Links</a>
             </li>
             <li>
-                <a href="#" class="secondary-text">Contact</a>
+                <a href="#">Contact</a>
             </li>
         </ul>
 
@@ -74,27 +73,16 @@
         </div>
     </div>
 
-
-    <!-- Search Results Container -->
-    <div class="container search-results-container">
-        <div class="container search-input-container d-flex ai-center">
-            <img src="./assets/icons/search.svg" alt="search_icon">
-            <input type="text" class="search-input article-search-input" id="article_search_input" placeholder="search">
-        </div>
-
-        <div class="container search-articles-container secondary-text"></div>
-    </div>
-
-
-
-    <main>
-        <!-- Section: Slider -->
-        <section class="slider">
-            <article class="slide current"></article>
-            <article class="slide"></article>
-            <article class="slide"></article>
+<main>
+    
+    <!-- Section: Slider -->
+    <section class="slider">
+        <article class="slide current"></article>
+        <article class="slide"></article>
+        <article class="slide"></article>
         </section>
-        <div class="container slider-control-btns-container d-flex jc-space_between">
+
+        <div class="container slider-control-btns-container">
             <button class="btn prev-slide-btn" id="prev_slide_btn">
                 <img src="./assets/icons/arrow-left.svg">
             </button>
@@ -127,7 +115,7 @@
         </div>
 
         <div class="container articles-container">
-            <a href="#">
+            <!-- <a href="#">
                 <article>
                     <img src="./assets/posts/post_thumbnail-1.png" alt="post_thumbnail_image">
                     <header>
@@ -181,7 +169,7 @@
                     </p>
                     <button class="cta-btn">Read More</button>
                 </article>
-            </a>
+            </a> -->
         </div>
     </section>
    </main>
