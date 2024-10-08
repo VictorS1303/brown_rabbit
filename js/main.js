@@ -3,6 +3,8 @@ const mobileMenuContentContainer = document.querySelector('.mobile-menu-content-
 const mobileMenuSocialsContainer = document.querySelector('.socials-container')
 const searchResultsToggleBtn = document.querySelector('#search_results_toggle_button') 
 const searchResultsContainer = document.querySelector('.search-results-container')
+const currentPageNumber = document.querySelector('.current-page-number')
+const totalPageNumber = document.querySelector('.total-page-number')
 
 
 const slides = document.querySelectorAll('.slide')
@@ -11,12 +13,15 @@ const nextSlideButton = document.querySelector('#next_slide_btn')
 const slideDescContainerArticles = document.querySelectorAll('.container.slide-desc-container article')
 const articlesContainer = document.querySelector('.articles-container')
 
+const paginationSection = document.querySelector('.pagination-section')
+
+
 // EVENTLISTENERS //
 mobileMenuToggleBtn.addEventListener('click', toggleMobileMenu)
 prevSlideButton.addEventListener('click', prevSlide)
 nextSlideButton.addEventListener('click', nextSlide)
 paginationSection.addEventListener('click', (e) => updatePageNumber(e))
-searchResultsToggleBtn.addEventListener('click', toggleSearchResultsContainer)
+// searchResultsToggleBtn.addEventListener('click', toggleSearchResultsContainer)
 
 
 
@@ -98,10 +103,10 @@ function generateArticles()
                 <article>
                     <img src=${article.img} alt=${article.alt}>
                     <header>
-                        <h3>${article.title}</h3>
-                        <h6 class="date">${article.date}</h6>
+                        <h3 class="primary-text">${article.title}</h3>
+                        <h6 class="date-text">${article.date}</h6>
                     </header>
-                    <p class="article-text">
+                    <p class="article-text primary-text">
                         ${article.articleText}
                     </p>
                     <button class="cta-btn">${article.readMoreBtn}</button>
@@ -112,4 +117,38 @@ function generateArticles()
 }
 
 generateArticles()
+
+// Update Page Number
+function updatePageNumber(e)
+{
+    let currentPage = parseInt(currentPageNumber.textContent)
+    let totalPages = parseInt(totalPageNumber.textContent)
+
+
+    if(e.target.matches('.prev-btn'))
+    {
+        currentPage--
+        
+        if(currentPage <= 1)
+        {
+            currentPage = 1
+        }        
+    }
+
+    currentPage++
+
+    // Ensure it doesn't go beyond the total page number
+    if (currentPage >= totalPages)
+    {
+        currentPage = totalPages
+    }
+
+    // Update the text content with the new page number
+    currentPageNumber.textContent = currentPage
+}
+
+
+
+
+
 

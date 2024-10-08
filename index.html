@@ -6,44 +6,45 @@
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/utilities.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/framework.css">
     <script src="https://kit.fontawesome.com/e05f21b32e.js" crossorigin="anonymous"></script>
     <script src="js/main.js" type="module"></script>
     <title>TwentyFour | Brown Rabbit</title>
 </head>
 <body>
-    <nav class="main-nav" id="main_nav">
+    <nav class="main-nav d-grid gtc-two ai-center" id="main_nav">
         <img src="./assets/logos/logo-white.svg" class="logo" alt="logo_white">
 
-        <div class="container search-and-toggle-container">
+        <div class="container search-and-toggle-container d-flex jc-end ai-center">
             <div>
-                <img src="./assets/icons/search.svg" class="search-icon" alt="search_icon">
+                <img src="./assets/icons/search.svg" class="search-icon" id="search_results_toggle_button" alt="search_icon">
             </div>
 
             <button class="btn menu-toggle-btn" id="menu_toggle_btn">
-                <span class="menu-toggle-btn-line"></span>
-                <span class="menu-toggle-btn-line"></span>
+                <span class="menu-toggle-btn-line secondary-background"></span>
+                <span class="menu-toggle-btn-line secondary-background"></span>
             </button>
         </div>
     </nav>
     <div class="container mobile-menu-content-container">
         <ul>
             <li>
-                <a href="#">About us</a>
+                <a href="#" class="secondary-text">About us</a>
             </li>
             <li>
-                <a href="#">Events</a>
+                <a href="#" class="secondary-text">Events</a>
             </li>
             <li>
-                <a href="#">Nordic roaster</a>
+                <a href="#" class="secondary-text">Nordic roaster</a>
             </li>
             <li>
-                <a href="#">Results</a>
+                <a href="#" class="secondary-text">Results</a>
             </li>
             <li>
-                <a href="#">Links</a>
+                <a href="#" class="secondary-text">Links</a>
             </li>
             <li>
-                <a href="#">Contact</a>
+                <a href="#" class="secondary-text">Contact</a>
             </li>
         </ul>
 
@@ -73,16 +74,27 @@
         </div>
     </div>
 
-<main>
-    
-    <!-- Section: Slider -->
-    <section class="slider">
-        <article class="slide current"></article>
-        <article class="slide"></article>
-        <article class="slide"></article>
-        </section>
 
-        <div class="container slider-control-btns-container">
+    <!-- Search Results Container -->
+    <div class="container search-results-container">
+        <div class="container search-input-container d-flex ai-center">
+            <img src="./assets/icons/search.svg" alt="search_icon">
+            <input type="text" class="search-input article-search-input" id="article_search_input" placeholder="search">
+        </div>
+
+        <div class="container search-articles-container secondary-text"></div>
+    </div>
+
+
+
+    <main>
+        <!-- Section: Slider -->
+        <section class="slider">
+            <article class="slide current"></article>
+            <article class="slide"></article>
+            <article class="slide"></article>
+        </section>
+        <div class="container slider-control-btns-container d-flex jc-space_between">
             <button class="btn prev-slide-btn" id="prev_slide_btn">
                 <img src="./assets/icons/arrow-left.svg">
             </button>
@@ -95,84 +107,220 @@
    
 
     <!-- Section: Slider Text & Articles -->
-     <section class="section slider-text-and-articles-section" id="slider_text_and_articles_section">
+    <section class="section slider-text-and-articles-section d-flex fd-column ai-center" id="slider_text_and_articles_section">
         <div class="container slide-desc-container">
             <article class="current-slide-article">
-                <p>
+                <p class="primary-background secondary-text">
                     <q>To create an environment in which knowledge about coffee and its sphere can be obtained.</q>
                 </p>
             </article>
             <article>
-                <p>
+                <p class="primary-background secondary-text">
                     <q>This is a great introduction to the coffee industry's best beans on the planet</q>
                 </p>
             </article>
             <article>
-                <p>
+                <p class="primary-background secondary-text">
                     <q>Coffee in, code out - this is the way of eternal life an empowerment of the soul</q>
                 </p>
             </article>
         </div>
 
-        <div class="container articles-container">
-            <!-- <a href="#">
-                <article>
-                    <img src="./assets/posts/post_thumbnail-1.png" alt="post_thumbnail_image">
-                    <header>
-                        <h3>Wonderful Copenhagen 2021</h3>
-                        <h6 class="date">Published 12/07/2021</h6>
-                    </header>
-                    <p class="article-text">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem expedita debitis et ipsum harum, nemo doloribus non sunt hic modi tempora libero optio natus magni animi dolorem pariatur alias molestias explicabo repellendus voluptatum iusto, quos voluptatibus obcaecati? Atque sed repellat quidem ut provident dolore quisquam...
-                    </p>
-                    <button class="cta-btn">Read More</button>
-                </article>
-            </a>
+        <div class="container articles-container d-flex fd-column ta-left"></div>
+    </section>
 
-            <a href="#">
-                <article>
-                    <img src="./assets/posts/post_thumbnail-2.png" alt="post_thumbnail_image">
-                    <header>
-                        <h3>Wonderful Copenhagen 2021</h3>
-                        <h6 class="date">Published 12/07/2021</h6>
-                    </header>
-                    <p class="article-text">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem expedita debitis et ipsum harum, nemo doloribus non sunt hic modi tempora libero optio natus magni animi dolorem pariatur alias molestias explicabo repellendus voluptatum iusto, quos voluptatibus obcaecati? Atque sed repellat quidem ut provident dolore quisquam...
-                    </p>
-                    <button class="cta-btn">Read More</button>
-                </article>
-            </a>
 
-            <a href="#">
-                <article>
-                    <img src="./assets/posts/post_thumbnail-3.png" alt="post_thumbnail_image">
-                    <header>
-                        <h3>Wonderful Copenhagen 2021</h3>
-                        <h6 class="date">Published 12/07/2021</h6>
-                    </header>
-                    <p class="article-text">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem expedita debitis et ipsum harum, nemo doloribus non sunt hic modi tempora libero optio natus magni animi dolorem pariatur alias molestias explicabo repellendus voluptatum iusto, quos voluptatibus obcaecati? Atque sed repellat quidem ut provident dolore quisquam...
-                    </p>
-                    <button class="cta-btn">Read More</button>
-                </article>
-            </a>
+    <!-- Section: Pagination -->
+    <section class="section pagination-section d-flex jc-space_between margin-inline" id="pagination_section">
+        <button class="cta-btn prev-btn" id="prev_btn">
+            Previous
+        </button>
 
-            <a href="#">
-                <article>
-                    <img src="./assets/posts/post_thumbnail-4.png" alt="post_thumbnail_image">
-                    <header>
-                        <h3>Wonderful Copenhagen 2021</h3>
-                        <h6 class="date">Published 12/07/2021</h6>
-                    </header>
-                    <p class="article-text">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem expedita debitis et ipsum harum, nemo doloribus non sunt hic modi tempora libero optio natus magni animi dolorem pariatur alias molestias explicabo repellendus voluptatum iusto, quos voluptatibus obcaecati? Atque sed repellat quidem ut provident dolore quisquam...
-                    </p>
-                    <button class="cta-btn">Read More</button>
-                </article>
-            </a> -->
+        <p class="pagination-counter d-flex ai-center jc-center" id="pagination_counter">
+            Page
+            <span class="current-page-number" id="current_page_number">1</span>
+            of
+            <span class="total-page-number" id="total_page_number">3</span>
+        </p>
+
+        <button class="cta-btn next-btn" id="next_btn">
+            Next
+        </button>
+    </section>
+
+    <!-- Section: Shop -->
+    <section class="section shop-section ta-left margin-inline" id="shop_section">
+        <h2 class="primary-text">WBC Shop</h2>
+        <p>Your shopping cart is empty</p>
+        <button class="cta-btn">Visit shop</button>
+    </section>
+
+    <!-- Section: Event -->
+    <section class="section event-section ta-left margin-inline" id="event_section">
+        <h2 class="primary-text">Next Event</h2>
+        <h4>World Barista Cup 2021</h4>
+        <p>Copenhagen, Denmark</p>
+        <p>Dates: 25th-27th August, 2011</p>
+        <p>Theme: SENSORY</p>
+
+
+        <button class="cta-btn">Sign up now</button>
+    </section>
+
+     <!-- Section: Scoreboard -->
+     <section class="section scoreboard-section ta-left margin-inline" id="scoreboard_section">
+        <h2 class="primary-text">Scoreboard</h2>
+        <ul>
+            <li>
+                2021 - ?
+            </li>
+            <li>
+                2020 - Denmark
+            </li>
+            <li>
+                2021 - Sweden
+            </li>
+            <li>
+                2021 - Turkey
+            </li>
+            <li>
+                2021 - Italy
+            </li>
+            <li>
+                2021 - Italy
+            </li>
+            <li>
+                2021 - Germany
+            </li>
+        </ul>
+    </section>
+
+
+    <!-- Section: Sponsors -->
+    <section class="section sponsors-section " id="sponsors_section">
+        <header>
+            <h4>
+                World Barista Cup Sponsors
+            </h4>
+        </header>
+
+        <div class="container sponsors-container d-grid jc-space_between padding-inline">
+            <img src="./assets/sponsors/sponsor-1.png" alt="sponsor_img_1">
+            <img src="./assets/sponsors/sponsor-2.png" alt="sponsor_img_2">
+            <img src="./assets/sponsors/sponsor-3.png" alt="sponsor_img_3">
+            <img src="./assets/sponsors/sponsor-4.png" alt="sponsor_img_4">
+            <img src="./assets/sponsors/sponsor-5.png" alt="sponsor_img_5">
+            <img src="./assets/sponsors/sponsor-6.png" alt="sponsor_img_6">
+            <img src="./assets/sponsors/sponsor-7.png" alt="sponsor_img_7">
+            <img src="./assets/sponsors/sponsor-8.png" alt="sponsor_img_8">
+            <img src="./assets/sponsors/sponsor-9.png" alt="sponsor_img_9">
+            <img src="./assets/sponsors/sponsor-10.png" alt="sponsor_img_10">
+            <img src="./assets/sponsors/sponsor-11.png" alt="sponsor_img_11">
+            <img src="./assets/sponsors/sponsor-12.png" alt="sponsor_img_12">
+            <img src="./assets/sponsors/sponsor-13.png" alt="sponsor_img_13">
+            <img src="./assets/sponsors/sponsor-14.png" alt="sponsor_img_14">
+            <img src="./assets/sponsors/sponsor-15.png" alt="sponsor_img_15">
+            <img src="./assets/sponsors/sponsor-16.png" alt="sponsor_img_16">
+            <img src="./assets/sponsors/sponsor-17.png" alt="sponsor_img_17">
+            <img src="./assets/sponsors/sponsor-18.png" alt="sponsor_img_18">
+            <img src="./assets/sponsors/sponsor-19.png" alt="sponsor_img_19">
+            <img src="./assets/sponsors/sponsor-20.png" alt="sponsor_img_20">
+            <img src="./assets/sponsors/sponsor-21.png" alt="sponsor_img_21">
+            <img src="./assets/sponsors/sponsor-22.png" alt="sponsor_img_22">
         </div>
     </section>
    </main>
+
+   <footer class="footer primary-background margin-inline ta-center" id="footer">
+      <!-- Footer: Logo & Socials -->
+      <div class="container footer-container footer_logo-and-socials-container">
+        <img src="./assets/logos/logo-white.svg" alt="">
+
+        <div class="socials-container">
+            <ul class="d-flex jc-space_around">
+                <li>
+                    <a href="#">
+                        <img src="./assets/icons/linkedin-white.svg" alt="linked_in_logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./assets/icons/twitter-white.svg" alt="twitter_logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./assets/icons/instagram-white.svg" alt="instagram_logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./assets/icons/facebook-white.svg" alt="facebook_logo">
+                    </a>
+                </li>
+            </ul>
+        </div>
+      </div>
+
+      <!-- Footer: About Container -->
+      <div class="container about-container">
+        <header class="secondary-text ta-center">
+            <h4>
+                About World Barista Cup
+            </h4>
+        </header>
+
+        <h6 class="tertiary-text">
+            The vision within <br />
+            The World Barista Cup
+        </h6>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est commodi eos corrupti, expedita maiores doloremque architecto dolore inventore velit.
+        </p>
+      </div>
+
+      <!-- Container: Instagram Feed -->
+     <div class="container instagram-feed-container">
+        <header>
+            <h4>Instagram Feed</h4>
+        </header>
+
+        <div class="container posts-container d-grid gtc-three">
+            <img src="./assets/instagram_feed/instagram-image-1.png" alt="instagram_image_1">
+            <img src="./assets/instagram_feed/instagram-image-2.png" alt="instagram_image_2">
+            <img src="./assets/instagram_feed/instagram-image-3.png" alt="instagram_image_3">
+            <img src="./assets/instagram_feed/instagram-image-4.png" alt="instagram_image_4">
+            <img src="./assets/instagram_feed/instagram-image-5.png" alt="instagram_image_5">
+            <img src="./assets/instagram_feed/instagram-image-6.png" alt="instagram_image_6">
+            <img src="./assets/instagram_feed/instagram-image-7.png" alt="instagram_image_7">
+            <img src="./assets/instagram_feed/instagram-image-8.png" alt="instagram_image_8">
+            <img src="./assets/instagram_feed/instagram-image-9.png" alt="instagram_image_9">
+        </div>
+     </div>
+
+     <!-- Container: Contact -->
+     <div class="container contact-container">
+        <header class="secondary-text">
+            <h5>Contact</h5>
+            <h6>World Barista Cup</h6>
+        </header>
+
+        <div class="container contact-info-container tertiary-text">
+            <h6>Amagertorv 13</h6>
+            <h6>1160 Copenhagen K</h6>
+            <h6>
+                <a href="tel:004533120428">45 33 12 04 28</a>
+            </h6>
+            <h6>
+                CVR: 11427693
+            </h6>
+            <h6>
+                <a href="mailto:info@worldbaristacup.com">info@worldbaristacup.com</a>
+            </h6>
+        </div>
+     </div>
+   </footer>
 </body>
 </html>
 

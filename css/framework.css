@@ -30,6 +30,12 @@
     padding-inline: calc(25dvw / 2);
 }
 
+/* MARGINS */
+.margin-inline
+{
+    margin-inline: calc(25dvw / 2);
+}
+
 /* BACKGROUND CLASSES */
 .primary-background
 {
@@ -134,12 +140,12 @@
 
 .gtc-two
 {
-    grid-template-columns: repeat(2, 1fr);;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .gtc-three
 {
-    grid-template-columns: repeat(3, 1fr);;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .gtc-four
