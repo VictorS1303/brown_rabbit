@@ -9,11 +9,7 @@ const slides = document.querySelectorAll('.slide')
 const prevSlideButton = document.querySelector('#prev_slide_btn')
 const nextSlideButton = document.querySelector('#next_slide_btn')
 const slideDescContainerArticles = document.querySelectorAll('.container.slide-desc-container article')
-
-const prevArticlesBtn = document.querySelector('#prev_articles_btn')
-const nextArticlesBtn = document.querySelector('#next_articles_btn')
-const currentPageNumber = document.querySelector('#current_page_number')
-const paginationSection = document.querySelector('.pagination-section')
+const articlesContainer = document.querySelector('.articles-container')
 
 // EVENTLISTENERS //
 mobileMenuToggleBtn.addEventListener('click', toggleMobileMenu)
@@ -33,24 +29,6 @@ function toggleMobileMenu()
     mobileMenuContentContainer.classList.toggle('active')
     mobileMenuSocialsContainer.classList.toggle('active')
 }
-
-function toggleSearchResultsContainer()
-{
-    searchResultsToggleBtn.classList.toggle('opened')
-    searchResultsContainer.classList.toggle('active')
-
-    // Check if opened
-    checkIsOpen()
-}
-
-function checkIsOpen()
-{
-    if(searchResultsContainer.classList.contains('.active'))
-    {
-        document.body.style.overflowY = 'hidden'
-    }
-}
-
 
 // Slider //
 function nextSlide()
@@ -108,26 +86,30 @@ function prevSlide()
 
 }
 
-// Update Page Number
-function updatePageNumber(e)
-{
-    if(e.target.matches('#prev_articles_btn'))
-    {
-        if(currentPageNumber.textContent === '1')
-        {
-            return
-        }
-         
-        currentPageNumber.textContent--
-    }
+import {articles} from './articles.js'
 
-    if(e.target.matches('#next_articles_btn'))
-    {
-        if(currentPageNumber.textContent === '3')
-        {
-            return
-        }
-            
-        currentPageNumber.textContent++
-    }
+// Generate Articles //
+function generateArticles()
+{
+    articles.forEach((article) =>
+        articlesContainer.innerHTML +=
+        `
+            <a href=${article.href}>
+                <article>
+                    <img src=${article.img} alt=${article.alt}>
+                    <header>
+                        <h3>${article.title}</h3>
+                        <h6 class="date">${article.date}</h6>
+                    </header>
+                    <p class="article-text">
+                        ${article.articleText}
+                    </p>
+                    <button class="cta-btn">${article.readMoreBtn}</button>
+                </article>
+            </a>
+        `
+    )
 }
+
+generateArticles()
+
