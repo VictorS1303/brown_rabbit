@@ -6,7 +6,7 @@ const slides = document.querySelectorAll('.slide')
 const prevSlideButton = document.querySelector('#prev_slide_btn')
 const nextSlideButton = document.querySelector('#next_slide_btn')
 const slideDescContainerArticles = document.querySelectorAll('.container.slide-desc-container article')
-console.log(slideDescContainerArticles)
+const articlesContainer = document.querySelector('.articles-container')
 
 // EVENTLISTENERS //
 mobileMenuToggleBtn.addEventListener('click', toggleMobileMenu)
@@ -23,10 +23,6 @@ function toggleMobileMenu()
     mobileMenuContentContainer.classList.toggle('active')
     mobileMenuSocialsContainer.classList.toggle('active')
 }
-
-
-
-
 
 // Slider //
 function nextSlide()
@@ -83,4 +79,31 @@ function prevSlide()
     }
 
 }
+
+import {articles} from './articles.js'
+
+// Generate Articles //
+function generateArticles()
+{
+    articles.forEach((article) =>
+        articlesContainer.innerHTML +=
+        `
+            <a href=${article.href}>
+                <article>
+                    <img src=${article.img} alt=${article.alt}>
+                    <header>
+                        <h3>${article.title}</h3>
+                        <h6 class="date">${article.date}</h6>
+                    </header>
+                    <p class="article-text">
+                        ${article.articleText}
+                    </p>
+                    <button class="cta-btn">${article.readMoreBtn}</button>
+                </article>
+            </a>
+        `
+    )
+}
+
+generateArticles()
 
