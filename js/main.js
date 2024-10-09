@@ -21,7 +21,7 @@ mobileMenuToggleBtn.addEventListener('click', toggleMobileMenu)
 prevSlideButton.addEventListener('click', prevSlide)
 nextSlideButton.addEventListener('click', nextSlide)
 paginationSection.addEventListener('click', (e) => updatePageNumber(e))
-// searchResultsToggleBtn.addEventListener('click', toggleSearchResultsContainer)
+searchResultsToggleBtn.addEventListener('click', toggleSearchResultsContainer)
 
 
 
@@ -89,6 +89,12 @@ function prevSlide()
         slideDescContainerArticles[slideDescContainerArticles.length - 1].classList.add('current-slide-article')
     }
 
+}
+
+function toggleSearchResultsContainer()
+{
+    searchResultsToggleBtn.classList.toggle('opened')
+    searchResultsContainer.classList.toggle('active')
 }
 
 import {articles} from './articles.js'
