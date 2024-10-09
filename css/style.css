@@ -158,12 +158,13 @@ nav.main-nav
 }
 
 /* Search Results Container */
-.container.search-results-container
+.main-search-results-container
 {
     position: absolute;
     width: 100dvw;
     right: -100dvw;
-    height: 100dvh;
+    min-height: 100dvh;
+    height: fit-content;
     background-color: var(--nav-background-color);
     padding-block: 120px 60px;
     padding-inline: 50px;
@@ -176,6 +177,36 @@ nav.main-nav
         right: 0;
         opacity: 1;
         transition: right .2s ease-in, opacity .2s ease-in;
+    }
+
+    &.hidden
+    {
+        opacity: 0;
+        transition: opacity .4s ease-in;
+        z-index: -10000;
+    }
+
+    & .search-results-container
+    {
+        cursor: pointer;
+    }
+    
+    & .search-results-container > *
+    {
+        pointer-events: none;
+    }
+
+
+    & .search-result-article
+    {
+        z-index: 1000;
+
+        & h3
+        {
+            font-size: 25px;
+        }
+
+
     }
 
     .container
@@ -213,6 +244,9 @@ nav.main-nav
                 }
             }
         }
+
+        
+        
     }
     
     
