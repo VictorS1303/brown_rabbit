@@ -1,11 +1,15 @@
+import {articles} from './articles.js'
+
 const mobileMenuToggleBtn = document.querySelector('#menu_toggle_btn')
 const mobileMenuContentContainer = document.querySelector('.mobile-menu-content-container')
 const mobileMenuSocialsContainer = document.querySelector('.socials-container')
 const searchResultsToggleBtn = document.querySelector('#search_results_toggle_button') 
 const searchResultsContainer = document.querySelector('.search-results-container')
+const mainSearchResultsContainer = document.querySelector('.main-search-results-container')
+
 const currentPageNumber = document.querySelector('.current-page-number')
 const totalPageNumber = document.querySelector('.total-page-number')
-
+const articlesSearchInput = document.querySelector('#article_search_input')
 
 const slides = document.querySelectorAll('.slide')
 const prevSlideButton = document.querySelector('#prev_slide_btn')
@@ -16,13 +20,15 @@ const articlesContainer = document.querySelector('.articles-container')
 const paginationSection = document.querySelector('.pagination-section')
 
 
+
 // EVENTLISTENERS //
 mobileMenuToggleBtn.addEventListener('click', toggleMobileMenu)
 prevSlideButton.addEventListener('click', prevSlide)
 nextSlideButton.addEventListener('click', nextSlide)
 paginationSection.addEventListener('click', (e) => updatePageNumber(e))
-// searchResultsToggleBtn.addEventListener('click', toggleSearchResultsContainer)
-
+searchResultsToggleBtn.addEventListener('click', toggleSearchResultsContainer)
+articlesSearchInput.addEventListener('input', (e) => filterSearchResults(e))
+searchResultsContainer.addEventListener('click', (e) => openArticleModal(e))
 
 
 // Mobile Menu //
@@ -32,8 +38,8 @@ function toggleMobileMenu()
 {
     mobileMenuToggleBtn.classList.toggle('active')
     mobileMenuContentContainer.classList.toggle('active')
-    mobileMenuSocialsContainer.classList.toggle('active')
 }
+
 
 // Slider //
 function nextSlide()
@@ -91,7 +97,63 @@ function prevSlide()
 
 }
 
-import {articles} from './articles.js'
+function toggleSearchResultsContainer()
+{
+    searchResultsToggleBtn.classList.toggle('opened')
+    mainSearchResultsContainer.classList.toggle('active')
+    
+    // Ensure the 'hidden' class is removed when toggling the container
+    if (mainSearchResultsContainer.classList.contains('hidden'))
+    {
+        mainSearchResultsContainer.classList.remove('hidden')
+    }
+}
+
+// Display search results
+function filterSearchResults(e)
+{
+    // Clear previous search results
+    searchResultsContainer.innerHTML = ''
+
+    // Get the search term and convert to lowercase
+    const searchTerm = e.target.value.toLowerCase()
+
+   
+
+    // Filter articles based on the search term
+    const filteredArticles = articles.filter((article) =>
+        article.title.toLowerCase().includes(searchTerm) ||
+        article.articleText.toLowerCase().includes(searchTerm)
+    )
+
+    // Display filtered articles
+    filteredArticles.forEach((article) =>
+    {
+        const articleHTML = `
+            <a href="${article.href}">
+                <article class="search-result-article secondary-color">
+                    <header class="secondary-text">
+                        <h3>${article.title}</h3>
+                        <h6 class="date-text">${article.date}</h6>
+                    </header>
+                    <p class="article-text secondary-text">
+                        ${article.articleText}
+                    </p>
+                </article>
+            </a>
+        `
+        searchResultsContainer.innerHTML += articleHTML
+    })
+
+    // If no articles match the search term, display a message
+    if (filteredArticles.length === 0 || searchTerm.trim() === '')
+    {
+        searchResultsContainer.innerHTML = '<p class="secondary-text">No articles found.</p>'
+    }
+}
+
+
+
 
 // Generate Articles //
 function generateArticles()
@@ -117,6 +179,20 @@ function generateArticles()
 }
 
 generateArticles()
+
+
+function openArticleModal(e)
+{
+    if(e.target.matches('.search-results-container'))
+    {
+        e.target.closest('.main-search-results-container').classList.add('hidden')     
+        e.target.closest('.main-search-results-container').classList.remove('active')
+    }
+
+    toggleSearchResultsContainer()
+}
+
+
 
 // Update Page Number
 function updatePageNumber(e)
@@ -146,9 +222,3 @@ function updatePageNumber(e)
     // Update the text content with the new page number
     currentPageNumber.textContent = currentPage
 }
-
-
-
-
-
-
