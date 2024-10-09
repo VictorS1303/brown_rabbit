@@ -327,13 +327,47 @@ nav.main-nav
             {
                 color: var(--date-color);
             }
-
-            & p
-            {
-                margin-top: 10px;
-            }
         }
     }
 }
 
+
+/* Article Modal */
+.container.article-modal-container
+{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80vw;
+    background-color: #fff;
+    height: fit-content;
+    z-index: 10000;
+
+    & .modal-header
+    {
+        position: relative;
+
+        & .close-modal-button-wrapper
+        {
+           position: absolute;
+           top: 0;
+           right: 0;
+           background-color: #000;
+           padding: 10px;
+        }
+
+        & .close-article-modal-btn        
+        {
+            width: 15px;
+            height: 15px;
+            cursor: pointer;
+
+            & img
+            {
+                pointer-events: none;
+            }
+        }
+    }
+}
 

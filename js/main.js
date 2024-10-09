@@ -97,6 +97,9 @@ function generateArticles()
                     </header>
                     <p class="article-text">
                         ${article.articleText}
+                        <span class="read-more-text">
+                            ${article.readMoreArticleText}
+                        </span>
                     </p>
                     <button class="cta-btn">${article.readMoreBtn}</button>
                 </article>
@@ -107,3 +110,7 @@ function generateArticles()
 
 generateArticles()
 
+function showReadMoreText()
+{
+    
+}
