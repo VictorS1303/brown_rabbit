@@ -36,8 +36,12 @@
     --slide-desc-container-background-color: #000;
     --date-color: #aaa;
     --divider-border-color: #ccc;
+<<<<<<< HEAD
     --footer-background-color: #000;
     --border-bottom-color: #ccc;
+=======
+    --articles-modal-background-color: #fff;
+>>>>>>> mobile_articles_modal
 
     /* Buttons */
     --cta-btn-color: #000;
