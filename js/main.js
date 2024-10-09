@@ -222,9 +222,3 @@ function updatePageNumber(e)
     // Update the text content with the new page number
     currentPageNumber.textContent = currentPage
 }
-
-
-
-
-
-
